@@ -1,0 +1,78 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "mksync"
+version = "0.1.0"
+description = ""
+authors = ["Niklas Rosenstein <rosensteinniklas@gmail.com>"]
+license = "MIT"
+packages = [{ include = "mksync", from = "src" }]
+classifiers = []
+keywords = []
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/NiklasRosenstein/mksync/issues"
+# Documentation = ""
+# Homepage = ""
+Repository = "https://github.com/NiklasRosenstein/mksync"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-adjudicator = "^0.3.1"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pycln = "^2.1.3"
+pytest = "*"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+# ...
+
+[tool.poetry.scripts]
+mksync = "mksync.__main__:main"
+
+[tool.slap]
+typed = true
+
+[tool.slap.test]
+check  = "slap check"
+black  = "black --check src/ tests/"
+flake8 = "flake8 src/ tests/"
+isort  = "isort --check-only src/ tests/"
+mypy   = "dmypy run src/"
+pycln  = "pycln src/ tests/ --check"
+pytest = "pytest tests/ -vv"
+
+[tool.slap.run]
+"docs:build" = ">&2 echo 'Not implemented' && exit 1"
+fmt          = "pycln src/ tests/ && black src/ tests/ && isort src/ tests/"
+
+[tool.mypy]
+python_version = "3.10"
+explicit_package_bases = true
+mypy_path = ["src"]
+namespace_packages = true
+pretty = true
+show_error_codes = true
+show_error_context = true
+strict = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+[tool.isort]
+profile = "black"
+line_length = 120
+combine_as_imports = true
+
+[tool.black]
+line-length = 120
