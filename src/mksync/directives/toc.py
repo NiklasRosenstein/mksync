@@ -17,11 +17,12 @@ from .parser import get_codeblock_positions, is_position_inside_codeblock, parse
 @union_rule()
 class TocDirective(PreprocessorDirective):
     path: Path
+    keyword: str
 
     @classmethod
     def parse(cls, path: Path, text: str) -> Iterator[TocDirective]:
         for directive in parse_directives(text, "table of contents", "toc"):
-            yield cls(directive.begin, directive.end, path)
+            yield cls(directive.begin, directive.end, path, directive.keyword)
 
 
 @union_rule(PreprocessorDirectives)
@@ -51,4 +52,4 @@ def _render_toc(request: TocDirective) -> RenderedDirective:
         toc.append("  " * depth + f"* [{match.group(2)}](#{anchor})")
 
     toc_string = "\n".join(toc)
-    return RenderedDirective(f"<!-- table of contents -->\n{toc_string}\n<!-- end table of contents -->")
+    return RenderedDirective(f"<!-- {request.keyword} -->\n{toc_string}\n<!-- end {request.keyword} -->")

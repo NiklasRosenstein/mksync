@@ -12,6 +12,7 @@ class ParsedDirective:
     begin: int
     end: int
     opts: str
+    keyword: str
 
 
 def parse_directives(text: str, *keywords: str) -> Iterator[ParsedDirective]:
@@ -57,7 +58,7 @@ def parse_directives(text: str, *keywords: str) -> Iterator[ParsedDirective]:
             offset = end_match.end()
 
         logger.debug("Found directive %r in [%d, %d]", begin_match.group(1), begin, end)
-        yield ParsedDirective(begin, end, opts)
+        yield ParsedDirective(begin, end, opts, begin_match.group(1))
 
         begin_match = next_begin_match
 

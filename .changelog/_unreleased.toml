@@ -3,3 +3,9 @@ id = "a584fdea-3670-4613-b52f-a1e6c1353a22"
 type = "fix"
 description = "Fix placement of code block when rendering `include` directive back into the Markdown file."
 author = "@NiklasRosenstein"
+
+[[entries]]
+id = "4a7f424a-d235-4d3b-822f-14d1857ca924"
+type = "improvement"
+description = "Keep the same keyword that was used for the TOC directive, which can be one of `toc` and `table of contents`"
+author = "@NiklasRosenstein"
