@@ -29,9 +29,8 @@ Then running `mksync README.md` will update the file in-place to:
 # My Project
 
 <!-- toc -->
-- [My Project](#my-project)
-  - [Installation](#installation)
-  - [Documentation](#documentation)
+* [Installation](#installation)
+* [Documentation](#documentation)
 <!-- end toc -->
 
 ## Installation
