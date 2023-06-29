@@ -52,11 +52,11 @@ def _get_include_file_directives(request: PreprocessFileTarget) -> IncludeFileDi
 
 @rule()
 def _include_file_request(request: IncludeFileDirective) -> RenderedDirective:
-    code = f" code:{request.code}" if request.code else ""
+    code = f"code:{request.code} " if request.code else ""
     begin_marker = f"```{request.code}\n" if request.code else ""
     end_marker = "```\n" if request.code else ""
     return RenderedDirective(
-        f"<!-- include {request.filename}{code} -->\n{begin_marker}"
+        f"<!-- include {code}{request.filename} -->\n{begin_marker}"
         + Path(request.filename).read_text().strip()
         + f"\n{end_marker}<!-- end include -->"
     )
