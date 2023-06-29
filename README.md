@@ -8,6 +8,7 @@ features to your project's `README.md` file, such as a table of contents, withou
   * [Available Directives](#available-directives)
   * [Synopsis](#synopsis)
 * [Changelog](#changelog)
+  * [0.1.4 (2023-06-29)](#014-2023-06-29)
   * [0.1.3 (2023-06-29)](#013-2023-06-29)
 <!-- end table of contents -->
 
@@ -72,6 +73,17 @@ options:
 # Changelog
 
 <!-- runcmd slap changelog format --all --markdown -->
+## 0.1.4 (2023-06-29)
+
+<table><tr><th>Type</th><th>Description</th><th>PR</th><th>Issues</th><th>Author</th></tr>
+  <tr><td>Fix</td><td>
+
+Fix placement of code block when rendering `include` directive back into the Markdown file.</td><td></td><td></td><td>@NiklasRosenstein</td></tr>
+  <tr><td>Improvement</td><td>
+
+Keep the same keyword that was used for the TOC directive, which can be one of `toc` and `table of contents`</td><td></td><td></td><td>@NiklasRosenstein</td></tr>
+</table>
+
 ## 0.1.3 (2023-06-29)
 
 <table><tr><th>Type</th><th>Description</th><th>PR</th><th>Issues</th><th>Author</th></tr>
