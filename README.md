@@ -8,7 +8,7 @@ features to your project's `README.md` file, such as a table of contents, withou
   * [Available Directives](#available-directives)
   * [Synopsis](#synopsis)
 * [Changelog](#changelog)
-  * [Unreleased](#unreleased)
+  * [0.1.3 (2023-06-29)](#013-2023-06-29)
 <!-- end table of contents -->
 
 ## Example

@@ -44,7 +44,7 @@ mksync = "mksync.__main__:main"
 typed = true
 
 [tool.slap.release]
-pre-commit = "mksync README.md -i && git add README.md"
+pre-commit = "mksync README.md -i && mksync README.md -i && git add README.md"
 
 [tool.slap.test]
 check  = "slap check"
