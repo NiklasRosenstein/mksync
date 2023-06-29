@@ -1,0 +1,5 @@
+[[entries]]
+id = "d257146a-1ec3-46e0-81d8-124cf88bafb6"
+type = "fix"
+description = "Fix parsing of `include` directives"
+author = "@NiklasRosenstein"

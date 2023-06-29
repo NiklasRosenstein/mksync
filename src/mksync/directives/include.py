@@ -30,7 +30,7 @@ class IncludeFileDirective(PreprocessorDirective):
 
     @classmethod
     def parse(cls, text: str) -> Iterator[IncludeFileDirective]:
-        regex = re.compile(r"(?:\s+code:([^ ]+))?(.*?)$")
+        regex = re.compile(r"(?:code:([^ ]+)\s+)?(.*?)$")
         for directive in parse_directives(text, "include"):
             m = regex.match(directive.opts)
             if m is None:
