@@ -11,6 +11,7 @@ license = "MIT"
 packages = [{ include = "mksync", from = "src" }]
 classifiers = []
 keywords = []
+readme = "README.md"
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/NiklasRosenstein/mksync/issues"
