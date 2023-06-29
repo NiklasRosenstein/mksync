@@ -4,9 +4,11 @@ MkSync replaces directives in a Markdown file with corresponding content. It's a
 features to your project's `README.md` file, such as a table of contents, without the manual upkeep.
 
 <!-- table of contents -->
-* [Example](#example)
-* [Available Directives](#available-directives)
-* [Synopsis](#synopsis)
+  * [Example](#example)
+  * [Available Directives](#available-directives)
+  * [Synopsis](#synopsis)
+* [Changelog](#changelog)
+  * [Unreleased](#unreleased)
 <!-- end table of contents -->
 
 ## Example
@@ -63,4 +65,18 @@ options:
   --inplace, -i  update the file in-place
   --verbose, -v  enable verbose logging
 ```
+<!-- end runcmd -->
+
+---
+
+# Changelog
+
+<!-- runcmd slap changelog format --all --markdown -->
+## 0.1.3 (2023-06-29)
+
+<table><tr><th>Type</th><th>Description</th><th>PR</th><th>Issues</th><th>Author</th></tr>
+  <tr><td>Fix</td><td>
+
+Fix parsing of `include` directives</td><td></td><td></td><td>@NiklasRosenstein</td></tr>
+</table>
 <!-- end runcmd -->
