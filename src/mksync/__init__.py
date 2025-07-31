@@ -1,4 +1,5 @@
 import logging
+from os import fspath
 from pathlib import Path
 
 from adjudicator import Params, RuleEngine
@@ -24,6 +25,7 @@ modules = [
 def mksync_file(path: Path) -> PreprocessFileResult:
     target = PreprocessFileTarget(path=path)
     engine = RuleEngine()
+    engine.hashsupport.register(Path, lambda p: engine.hashsupport(fspath(p)))
     engine.assert_(engine.graph)
 
     for module in modules:
