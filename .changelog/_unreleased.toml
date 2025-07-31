@@ -1,0 +1,5 @@
+[[entries]]
+id = "f5a2422c-0633-4912-8101-3633cbdc889c"
+type = "hygiene"
+description = "Use Uv and Tire instead of Slap and manual config of Mypy, Black, Flake8, isort, Pycln"
+author = "@NiklasRosenstein"
