@@ -9,3 +9,9 @@ id = "a715a41e-fc29-4e50-8cbd-c68caa0e058a"
 type = "fix"
 description = "The `toc` directive no longer considers `#` in the middle of the line"
 author = "@NiklasRosenstein"
+
+[[entries]]
+id = "6f73f42a-33ba-4831-bcdf-bd1ed63c96a7"
+type = "feature"
+description = "add `--change-dir,-c` option"
+author = "@NiklasRosenstein"

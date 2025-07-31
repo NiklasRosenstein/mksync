@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import argparse
 import logging
+import os
 from pathlib import Path
 
 from mksync import mksync_file
@@ -18,6 +19,7 @@ parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.R
 parser.add_argument("file", type=Path, help="the file to process")
 parser.add_argument("--inplace", "-i", action="store_true", help="update the file in-place")
 parser.add_argument("--verbose", "-v", default=0, action="count", help="enable verbose logging")
+parser.add_argument("--change-dir", "-c", action="store_true", help="change into parent directory of the file")
 
 
 def main() -> None:
@@ -26,6 +28,9 @@ def main() -> None:
         level=logging.DEBUG if args.verbose > 1 else logging.INFO if args.verbose > 0 else logging.WARNING,
         format="[%(asctime)s %(levelname)s] %(message)s",
     )
+
+    if args.change_dir:
+        os.chdir(args.file.parent)
 
     result = mksync_file(args.file)
     if args.inplace:
