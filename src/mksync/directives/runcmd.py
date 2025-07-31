@@ -45,8 +45,16 @@ def _get_toc_directives(request: PreprocessFileTarget) -> RuncmdDirectives:
 @rule()
 def _render_runcmd(request: RuncmdDirective) -> RenderedDirective:
     logger.info(f"Running command: {request.command}")
-    output = subprocess.run(request.command, shell=True, capture_output=True, text=True).stdout.strip()
+    result = subprocess.run(request.command, shell=True, capture_output=True, text=True)
+    if result.returncode != 0:
+        logger.warning(
+            'Command "%s" returned exit-code %d; stderr=%s',
+            request.command,
+            result.returncode,
+            result.stderr.strip(),
+        )
 
+    output = result.stdout.strip()
     code = f" code:{request.code}" if request.code is not None else ""
     begin_marker = f"```{request.code}\n" if request.code is not None else ""
     end_marker = "```\n" if request.code is not None else ""

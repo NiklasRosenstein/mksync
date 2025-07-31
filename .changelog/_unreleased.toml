@@ -18,3 +18,9 @@ type = "feature"
 description = "add `--change-dir,-c` option"
 author = "@NiklasRosenstein"
 pr = "https://github.com/NiklasRosenstein/mksync/pull/2"
+
+[[entries]]
+id = "ee1ce4c0-46a0-40ae-8652-c9f59bff29d5"
+type = "improvement"
+description = "log failing runcmd executions"
+author = "@NiklasRosenstein"
