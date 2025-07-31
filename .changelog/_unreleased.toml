@@ -1,0 +1,5 @@
+[[entries]]
+id = "2703a9df-d812-4d2a-914d-e79053de4b4d"
+type = "fix"
+description = "Fix using correct filename when `--change-dir,-c` is used"
+author = "@NiklasRosenstein"

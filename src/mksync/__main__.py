@@ -31,6 +31,7 @@ def main() -> None:
 
     if args.change_dir:
         os.chdir(args.file.parent)
+        args.file = Path(args.file.name)
 
     result = mksync_file(args.file)
     if args.inplace:
