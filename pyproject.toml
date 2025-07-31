@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mksync"
-version = "0.1.4"
+version = "0.1.5"
 description = ""
 authors = [{ name = "Niklas Rosenstein", email = "rosensteinniklas@gmail.com" }]
 requires-python = ">=3.10"
@@ -37,4 +37,4 @@ include = ["src/mksync"]
 typed = true
 
 [tool.slap.release]
-pre-commit = "mksync README.md -i && mksync README.md -i && git add README.md"
+pre-commit = "uv run mksync README.md -i && uv run mksync README.md -i && git add README.md && uv lock && git add uv.lock"

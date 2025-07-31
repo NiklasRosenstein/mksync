@@ -6,7 +6,7 @@ from adjudicator import Params, RuleEngine
 
 from mksync.targets import PreprocessFileResult, PreprocessFileTarget
 
-__version__ = "0.1.4"
+__version__ = "0.1.5"
 __all__ = ["mksync_file"]
 logger = logging.getLogger(__name__)
 modules = [
