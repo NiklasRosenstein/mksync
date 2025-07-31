@@ -10,6 +10,8 @@ on:
 
 jobs:
   changelog-update:
+    permissions:
+      contents: write
     name: "Insert Pull Request URL into new changelog entries"
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request_target'
