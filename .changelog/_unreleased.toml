@@ -3,15 +3,18 @@ id = "f5a2422c-0633-4912-8101-3633cbdc889c"
 type = "hygiene"
 description = "Use Uv and Tire instead of Slap and manual config of Mypy, Black, Flake8, isort, Pycln"
 author = "@NiklasRosenstein"
+pr = "https://github.com/NiklasRosenstein/mksync/pull/2"
 
 [[entries]]
 id = "a715a41e-fc29-4e50-8cbd-c68caa0e058a"
 type = "fix"
 description = "The `toc` directive no longer considers `#` in the middle of the line"
 author = "@NiklasRosenstein"
+pr = "https://github.com/NiklasRosenstein/mksync/pull/2"
 
 [[entries]]
 id = "6f73f42a-33ba-4831-bcdf-bd1ed63c96a7"
 type = "feature"
 description = "add `--change-dir,-c` option"
 author = "@NiklasRosenstein"
+pr = "https://github.com/NiklasRosenstein/mksync/pull/2"
