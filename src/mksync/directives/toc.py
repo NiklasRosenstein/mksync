@@ -39,7 +39,7 @@ def _get_toc_directives(request: PreprocessFileTarget) -> TocDirectives:
 def _render_toc(request: TocDirective) -> RenderedDirective:
     content = get(ReadFile, ReadFileRequest(request.path)).content
     codeblocks = get_codeblock_positions(content)
-    regex = re.compile(r"(#+)\s+(.*)")
+    regex = re.compile(r"(^#+)\s+(.*)", re.M)
     matches = [
         m for m in regex.finditer(content, request.end) if not is_position_inside_codeblock(m.start(), codeblocks)
     ]
