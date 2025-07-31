@@ -51,7 +51,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "python-adjudicator", specifier = ">=0.3.1,<0.4" }]
+requires-dist = [{ name = "python-adjudicator", specifier = ">=0.5.1,<0.6" }]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest" }]
@@ -128,16 +128,16 @@ wheels = [
 
 [[package]]
 name = "python-adjudicator"
-version = "0.3.2"
+version = "0.5.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "networkx", version = "3.4.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "networkx", version = "3.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "typeapi" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/79/99/74aa473cfd1c980625b47cae83763bad0edfb5d396b391ad486bd49ab967/python_adjudicator-0.3.2.tar.gz", hash = "sha256:f626310c463b2ef2d17cad5c85eaec579736b3662f6cd0c16520fedeed165fd2", size = 16226, upload-time = "2023-06-29T22:16:07.529Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/78/0a/6607ee577677aaf4b5f808b61c7a1e99da824873f43643a261e267d7d5dd/python_adjudicator-0.5.1.tar.gz", hash = "sha256:c890fe0f129bcf2c30797b42bb8cd05d7d0f71fbe8646ebe2a551502af52d8d7", size = 15225, upload-time = "2025-07-31T10:28:30.817Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0d/be/68712527e31cfc196dd09bec5e7b5575833ffb68fac9ef88ba2b5b17ca00/python_adjudicator-0.3.2-py3-none-any.whl", hash = "sha256:7178b964ae06c1adaeb0942952bb892b1642c6b2df1bd30ffc1855ee0f560c05", size = 19626, upload-time = "2023-06-29T22:16:05.901Z" },
+    { url = "https://files.pythonhosted.org/packages/1d/84/535db006b93a7a60e2924176639125a090ba04fa954c6d1400c1dad3fb32/python_adjudicator-0.5.1-py3-none-any.whl", hash = "sha256:20761fea1a9010167113a1ba0eabe1a71bd0c34d29304dc102926f409cc00d73", size = 21499, upload-time = "2025-07-31T10:28:29.486Z" },
 ]
 
 [[package]]
@@ -181,14 +181,14 @@ wheels = [
 
 [[package]]
 name = "typeapi"
-version = "1.5.1"
+version = "2.2.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d9/1b/922c411f0fd4ad1562cd944a5ba7a2473d3d53accb23ef4ded9318dd77f3/typeapi-1.5.1.tar.gz", hash = "sha256:cfbaa596116be11bc296fbabed725559f8bcae68b42791ca4dfc4125c2282340", size = 22851, upload-time = "2023-06-11T21:33:42.744Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e6/4c/6c35c2d97e6292d715bd93953a4a6114fc091492bd58cad1fdaebbc4ee12/typeapi-2.2.4.tar.gz", hash = "sha256:daa80767520c0957a320577e4f729c0ba6921c708def31f4c6fd8d611908fd7b", size = 121923, upload-time = "2025-01-29T11:40:14.68Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0c/fc/49ba89a8c70c1c675ebb748073398722fe98bf18581c74be37a4701623cd/typeapi-1.5.1-py3-none-any.whl", hash = "sha256:ba9fc9b5119a4d8e24cda7be3bfab8886c5ca7029b0205d1455df62f6b5c4b28", size = 24010, upload-time = "2023-06-11T21:33:41.018Z" },
+    { url = "https://files.pythonhosted.org/packages/b6/33/38da585b06978d262cc2b2b45bc57ee75f0ce5e0b4ef1cab1b86461e9298/typeapi-2.2.4-py3-none-any.whl", hash = "sha256:bd6d5e5907fa47e0303bf254e7cc8712d4be4eb26d7ffaedb67c9e7844c53bb8", size = 26387, upload-time = "2025-01-29T11:40:12.328Z" },
 ]
 
 [[package]]
