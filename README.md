@@ -8,6 +8,7 @@ features to your project's `README.md` file, such as a table of contents, withou
   * [Available Directives](#available-directives)
   * [Synopsis](#synopsis)
 * [Changelog](#changelog)
+  * [Unreleased](#unreleased)
   * [0.1.4 (2023-06-29)](#014-2023-06-29)
   * [0.1.3 (2023-06-29)](#013-2023-06-29)
 <!-- end table of contents -->
@@ -53,18 +54,19 @@ Then running `mksync README.md` will update the file in-place to:
 
 <!-- runcmd code: mksync --help -->
 ```
-usage: mksync [-h] [--inplace] [--verbose] file
+usage: mksync [-h] [--inplace] [--verbose] [--change-dir] file
 
 MkSync is a utility to update Markdown files in-place to automate some common upkeep tasks, such as inling
 example code and updating table of contents.
 
 positional arguments:
-  file           the file to process
+  file              the file to process
 
 options:
-  -h, --help     show this help message and exit
-  --inplace, -i  update the file in-place
-  --verbose, -v  enable verbose logging
+  -h, --help        show this help message and exit
+  --inplace, -i     update the file in-place
+  --verbose, -v     enable verbose logging
+  --change-dir, -c  change into parent directory of the file
 ```
 <!-- end runcmd -->
 
@@ -82,6 +84,9 @@ Use Uv and Tire instead of Slap and manual config of Mypy, Black, Flake8, isort,
   <tr><td>Fix</td><td>
 
 The `toc` directive no longer considers `#` in the middle of the line</td><td></td><td></td><td>@NiklasRosenstein</td></tr>
+  <tr><td>Feature</td><td>
+
+add `--change-dir,-c` option</td><td></td><td></td><td>@NiklasRosenstein</td></tr>
 </table>
 
 ## 0.1.4 (2023-06-29)
