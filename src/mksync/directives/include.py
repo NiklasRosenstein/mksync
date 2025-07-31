@@ -40,8 +40,7 @@ class IncludeFileDirective(PreprocessorDirective):
 
 
 @union_rule(PreprocessorDirectives)
-class IncludeFileDirectives(GenericPreprocessorDirectives["IncludeFileDirective"]):
-    ...
+class IncludeFileDirectives(GenericPreprocessorDirectives["IncludeFileDirective"]): ...
 
 
 @rule()

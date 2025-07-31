@@ -26,8 +26,7 @@ class TocDirective(PreprocessorDirective):
 
 
 @union_rule(PreprocessorDirectives)
-class TocDirectives(GenericPreprocessorDirectives["TocDirective"]):
-    ...
+class TocDirectives(GenericPreprocessorDirectives["TocDirective"]): ...
 
 
 @rule()

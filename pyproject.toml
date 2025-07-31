@@ -22,14 +22,7 @@ Repository = "https://github.com/NiklasRosenstein/mksync"
 mksync = "mksync.__main__:main"
 
 [tool.uv]
-dev-dependencies = [
-    "black",
-    "flake8",
-    "isort",
-    "mypy",
-    "pycln>=2.1.3,<3",
-    "pytest",
-]
+dev-dependencies = ["pytest"]
 
 [tool.hatch.build.targets.sdist]
 include = ["src/mksync"]
@@ -45,37 +38,3 @@ typed = true
 
 [tool.slap.release]
 pre-commit = "mksync README.md -i && mksync README.md -i && git add README.md"
-
-[tool.slap.test]
-check = "slap check"
-black = "black --check src/ tests/"
-flake8 = "flake8 src/ tests/"
-isort = "isort --check-only src/ tests/"
-mypy = "dmypy run src/"
-pycln = "pycln src/ tests/ --check"
-pytest = "pytest tests/ -vv"
-
-[tool.slap.run]
-fmt = "pycln src/ tests/ && black src/ tests/ && isort src/ tests/"
-
-[tool.mypy]
-python_version = "3.10"
-explicit_package_bases = true
-mypy_path = ["src"]
-namespace_packages = true
-pretty = true
-show_error_codes = true
-show_error_context = true
-strict = true
-warn_no_return = true
-warn_redundant_casts = true
-warn_unreachable = true
-warn_unused_ignores = true
-
-[tool.isort]
-profile = "black"
-line_length = 120
-combine_as_imports = true
-
-[tool.black]
-line-length = 120

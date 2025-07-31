@@ -33,8 +33,7 @@ class RuncmdDirective(PreprocessorDirective):
 
 
 @union_rule(PreprocessorDirectives)
-class RuncmdDirectives(GenericPreprocessorDirectives["RuncmdDirective"]):
-    ...
+class RuncmdDirectives(GenericPreprocessorDirectives["RuncmdDirective"]): ...
 
 
 @rule()
