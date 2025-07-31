@@ -73,6 +73,17 @@ options:
 # Changelog
 
 <!-- runcmd slap changelog format --all --markdown -->
+## Unreleased
+
+<table><tr><th>Type</th><th>Description</th><th>PR</th><th>Issues</th><th>Author</th></tr>
+  <tr><td>Hygiene</td><td>
+
+Use Uv and Tire instead of Slap and manual config of Mypy, Black, Flake8, isort, Pycln</td><td></td><td></td><td>@NiklasRosenstein</td></tr>
+  <tr><td>Fix</td><td>
+
+The `toc` directive no longer considers `#` in the middle of the line</td><td></td><td></td><td>@NiklasRosenstein</td></tr>
+</table>
+
 ## 0.1.4 (2023-06-29)
 
 <table><tr><th>Type</th><th>Description</th><th>PR</th><th>Issues</th><th>Author</th></tr>
