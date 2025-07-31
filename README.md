@@ -90,6 +90,9 @@ add `--change-dir,-c` option</td><td><a href="https://github.com/NiklasRosenstei
   <tr><td>Improvement</td><td>
 
 log failing runcmd executions</td><td><a href="https://github.com/NiklasRosenstein/mksync/pull/2">2</a></td><td></td><td>@NiklasRosenstein</td></tr>
+  <tr><td>Improvement</td><td>
+
+Upgrade to `python-adjudicator>=0.5.1,<0.6`</td><td><a href="https://github.com/NiklasRosenstein/mksync/pull/2">2</a></td><td></td><td>@NiklasRosenstein</td></tr>
 </table>
 
 ## 0.1.4 (2023-06-29)

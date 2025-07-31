@@ -25,3 +25,10 @@ type = "improvement"
 description = "log failing runcmd executions"
 author = "@NiklasRosenstein"
 pr = "https://github.com/NiklasRosenstein/mksync/pull/2"
+
+[[entries]]
+id = "d7bc5fd0-06a5-4dfe-961f-1740c2fb59d6"
+type = "improvement"
+description = "Upgrade to `python-adjudicator>=0.5.1,<0.6`"
+author = "@NiklasRosenstein"
+pr = "https://github.com/NiklasRosenstein/mksync/pull/2"
