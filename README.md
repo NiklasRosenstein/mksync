@@ -8,6 +8,7 @@ features to your project's `README.md` file, such as a table of contents, withou
   * [Available Directives](#available-directives)
   * [Synopsis](#synopsis)
 * [Changelog](#changelog)
+  * [0.1.6 (2025-07-31)](#016-2025-07-31)
   * [0.1.5 (2025-07-31)](#015-2025-07-31)
   * [0.1.4 (2023-06-29)](#014-2023-06-29)
   * [0.1.3 (2023-06-29)](#013-2023-06-29)
@@ -75,6 +76,14 @@ options:
 # Changelog
 
 <!-- runcmd slap changelog format --all --markdown -->
+## 0.1.6 (2025-07-31)
+
+<table><tr><th>Type</th><th>Description</th><th>PR</th><th>Issues</th><th>Author</th></tr>
+  <tr><td>Fix</td><td>
+
+Fix using correct filename when `--change-dir,-c` is used</td><td></td><td></td><td>@NiklasRosenstein</td></tr>
+</table>
+
 ## 0.1.5 (2025-07-31)
 
 <table><tr><th>Type</th><th>Description</th><th>PR</th><th>Issues</th><th>Author</th></tr>
